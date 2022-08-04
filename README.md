@@ -6,7 +6,17 @@
 
 1. Create .env from the example .env.example file
 2. Go to package.json and add your Node URL to the fork command.
+````
 "fork": "npx hardhat node --fork <https://eth-mainnet.alchemyapi.io/v2/....YOUR_NODE_HERE>",
+````
+3. Add etherscan api key in hardhat.config.test
+````
+ etherscan: {
+    apiKey: {
+      mainnet: 'api-key-here'
+    }
+  }
+````
 
 # .env Overview
 
